@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORGANATE - Organ Donation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="hero">
+            <img src="banner.jpg" alt="Hero Image">
+            <div class="overlay">
+                <h1>Join the Cause: Save Lives Through Organ Donation</h1>
+                <button class="cta">Become a Donor</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="statistics">
+        <h2>Real-Time Organ Donation Stats</h2>
+        <div class="stat-wrapper">
+            <div class="stat" title="Total Registered Donors">1,000,000</div>
+            <div class="stat" title="Organs Donated This Year">20,000</div>
+            <div class="stat" title="Lives Saved This Year">50,000</div>
+        </div>
+    </section>
+
+    <section class="donor-stories">
+        <h2>Donor Stories</h2>
+        <div class="carousel">
+            <div class="story">
+                <img src="story1.jpg" alt="Donor Story 1">
+                <p>Story of a donor...</p>
+            </div>
+            <div class="story">
+                <img src="story2.jpg" alt="Donor Story 2">
+                <p>Story of a recipient...</p>
+            </div>
+            <!-- Add more stories -->
+        </div>
+        <button class="carousel-btn" onclick="prevSlide()">&#10094;</button>
+        <button class="carousel-btn" onclick="nextSlide()">&#10095;</button>
+    </section>
+
+    <section class="quiz">
+        <h2>Are You Eligible to Donate?</h2>
+        <button class="cta quiz-button" onclick="startQuiz()">Take the Quiz</button>
+    </section>
+
+    <section class="sign-up">
+        <h2>Sign Up to Become a Donor</h2>
+        <form id="donorForm">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <button type="submit" class="cta">Register</button>
+        </form>
+    </section>
+
+    <section class="resources">
+        <h2>Educational Resources</h2>
+        <div class="resource-container">
+            <iframe src="resource1.html" title="Resource 1"></iframe>
+            <iframe src="resource2.html" title="Resource 2"></iframe>
+        </div>
+    </section>
+
+    <section class="live-chat">
+        <h2>Live Chat Support</h2>
+        <button class="cta" onclick="openChat()">Chat with Us</button>
+    </section>
+
+    <section class="testimonials">
+        <h2>What Donors Say</h2>
+        <div class="testimonial-slider">
+            <p>"I saved a life!" - Donor A</p>
+            <p>"Organ donation changed my life!" - Recipient B</p>
+            <!-- Add more testimonials -->
+        </div>
+    </section>
+
+    <section class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <h3 onclick="toggleFAQ(this)">What is organ donation?</h3>
+            <div class="answer">Organ donation is...</div>
+        </div>
+        <!-- Add more FAQ items -->
+    </section>
+
+    <section class="events">
+        <h2>Upcoming Events</h2>
+        <div class="calendar">Event Calendar Here</div>
+    </section>
+
+    <section class="social-media">
+        <h2>Follow Us</h2>
+        <div class="social-feed">Latest social media posts...</div>
+    </section>
+
+    <section class="impact-counter">
+        <h2>Lives Saved & Organs Donated</h2>
+        <div id="counter">0 Lives Saved</div>
+    </section>
+
+    <footer>
+        <h2>Stay Updated</h2>
+        <form id="newsletterForm">
+            <input type="email" placeholder="Your Email" required>
+            <button type="submit" class="cta">Subscribe</button>
+        </form>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
